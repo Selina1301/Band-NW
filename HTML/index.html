@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-</head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ke het thoi</title>
@@ -103,7 +103,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="btn js-buy-ticket s-col-full">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-col-full">Buy Tickets</button>
                             </div>
                         </div>
 
@@ -113,17 +113,17 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="btn js-buy-ticket s-col-full">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-col-full">Buy Tickets</button>
                             </div>
                         </div>
 
                         <div class="col col-third footer-margin mt-16 place-body-end">
-                            <img src="/HTML/assets/img/play/play3.jpg " alt="" class="place-img">
+                            <img src="/HTML/assets/img/play/play3.jpg" alt="" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-decs">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button href="#" class="btn js-buy-ticket s-col-full">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-col-full">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -297,7 +297,7 @@
                 var isParentMenu = this.nextElementSibling &&
                                     this.nextElementSibling.classList.contains('subnav');
                 if(isParentMenu){
-                    event.prerentDefault();
+                    event.preventDefault();
                     Header.style.height = null;
                 } else {
                     Header.style.height = null;
